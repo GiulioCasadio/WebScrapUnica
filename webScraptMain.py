@@ -121,71 +121,40 @@ def insert_list_group(padre):
                                 padre.figlio[j].figlio.append(albe_da_inserire_deep)
                                 aux += 1
 
-                                # controlli errori della pagina
-                                check_page(make_soup(albe_da_inserire_deep.Contenuto['href']), albe_da_inserire_deep)
-
     return padre
 
 
 # test link interni
 def body_link(alb):
     soup = make_soup(alb.Contenuto['href'])
+
+    # controlli errori della pagina
+    check_page(soup, alb)
+
     internal_link = soup.findChildren('ul', {'class': 'article-links-list'})
     for i in range(len(internal_link)):
         link_check = internal_link[i].findAll("li")
-        if len(link_check) > 1:
+        if len(link_check) > 1:  # più di un link
             for j in range(len(link_check)):
                 aux = True
                 link_check_href = Albero(link_check[j].find('a'))
-                for old_h in list_href:  # controllo se è già stato aggiunto quetso nodo
+                for old_h in list_href:  # controllo se è già stato aggiunto questo nodo
                     if link_check_href.Contenuto['href'] == old_h:
                         aux = False
                 if aux:
                     alb.figlio.append(link_check_href)
                     list_href.append(link_check_href.Contenuto['href'])
-                    # try:
-                    #     # controllo se dentro questa pagina son presenti ulteriori link
-                    #     soup_next = make_soup(link_check_href.Contenuto['href'])
-                    #     if soup_next is not None \
-                    #             and soup_next.find("base") is not None \
-                    #             and soup_next.find("base") == "href=\"https://www.unica.it/unica/":  # verifica dominio
-                    #
-                    #         # controllo errori
-                    #         check_page(soup_next, link_check_href)
-                    #
-                    #     #     body_link(link_check_href)
-                    # except requests.exceptions.SSLError:
-                    #     print("An exception occurred")
-                    # except requests.exceptions.ConnectionError:
-                    #     print("An exception occurred")
-            else:
-                if len(link_check) == 1:
-                    aux = True
-                    link_check_href = Albero(link_check[0].find('a'))
-                    for old_h in list_href:   # controllo se è già stato aggiunto quetso nodo
-                        if link_check_href.Contenuto['href'] == old_h:
-                            aux = False
-                    if aux:
-                        try:
-                            alb.figlio.append(link_check_href)
-                            list_href.append(link_check_href.Contenuto['href'])
 
-                        #     # controllo se dentro questa pagina son presenti ulteriori link
-                        #     soup_next = make_soup(link_check_href.Contenuto['href'])
-                        #     # if soup_next is not None \
-                        #     #         and soup_next.find("base") is not None \
-                        #     #         and soup_next.find("base") == "href=\"https://www.unica.it/unica/":  # verifica dominio
-                        #
-                        #     # controllo errori
-                        #     #    check_page(soup_next, link_check_href)
-                        #     #     body_link(link_check_href)
-                        except requests.exceptions.SSLError:
-                            print("An exception occurred")
-                        except requests.exceptions.ConnectionError:
-                            print("An exception occurred")
-
-            # controlli errori della pagina
-            check_page(soup, alb)
+        else:
+            if len(link_check) == 1:  # un solo link
+                aux = True
+                link_check_href = Albero(link_check[0].find('a'))
+                for old_h in list_href:   # controllo se è già stato aggiunto quetso nodo
+                    if link_check_href.Contenuto['href'] == old_h:
+                        aux = False
+                if aux:
+                    alb.figlio.append(link_check_href)
+                    list_href.append(link_check_href.Contenuto['href'])
 
 
 def check_page(soup, alb):

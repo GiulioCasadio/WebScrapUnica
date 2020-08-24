@@ -20,10 +20,12 @@ Homepage
 				 Prorettori e delegati
 				 Ufficio di gabinetto
 				 Senato accademico
+					Area riservata SA
 					 Decreti di aggiornamento della composizione del Senato Accademico
 					 Verbali SA
 					 Resoconti sedute SA
 				 Consiglio d'Amministrazione
+					Area riservata CdA
 					 Decreti di aggiornamento della composizione del CdA
 					 Verbali CdA
 					 Resoconti sedute CdA
@@ -35,9 +37,11 @@ Homepage
 				 Consiglio degli studenti
 				 Garante degli studenti
 				 Comitato unico di garanzia
+					 Normativa
 			 Direzione generale
 			 Direzioni
 				 Direzione acquisti e appalti
+					 Modulistica
 				 Direzione ambiente, sicurezza, qualità e audit
 				 Direzione amministrazione e finanza
 					 Bilancio
@@ -46,10 +50,12 @@ Homepage
 					 Documenti
 					 Avvisi
 				 Direzione investimenti, manutenzione immobili e impianti
+					UTILIZZO DI AULE FASE 3 COVID
 					 Progetto asilo nido
 					 Antincendio
 				 Direzione per i servizi agli studenti e servizi generali
 				 Direzione per i servizi bibliotecari e attività museali
+					Sito del Sistema bibliotecario di Ateneo
 				 Direzione per la didattica e l'orientamento
 					 S.I.A. – Servizi per l'Inclusione e l'Apprendimento
 					 Documenti
@@ -61,6 +67,7 @@ Homepage
 					 Consorzi, centri di competenza
 					 Protocolli e convenzioni
 				 Direzione personale, organizzazione, performance
+					Organigramma generale d’Ateneo
 					 Posizioni organizzative e affidamenti-2019
 					 Manuale trasparenza
 					 Classi stipendiali professori e ricercatori
@@ -105,6 +112,7 @@ Homepage
 				 Commissione etica
 				 Collegio di disciplina
 				 Comitato per lo sport universitario
+					Centro universitario sportivo (CUS)
 				 Servizio di Fisica Sanitaria e Radioprotezione
 				 Organismo per il benessere degli animali
 			 Relazioni sindacali
@@ -211,6 +219,7 @@ Homepage
 					Corsi di Lingua per Studenti UniCa in partenza
 				 Partner di UniCa in Erasmus+
 				 Linee guida dell'Ateneo e normativa di riferimento per la mobilità studentesca internazionale
+					Regolamenti e Piani d'Azione dell'Ateneo relativi alla Mobilità Internazionale
 				 Contatti Ufficio Mobilità Internazionale  (ISMOKA)
 				 Contatti Sportelli Erasmus+ delle Facoltà
 				 Avvisi Mobilità Internazionale
@@ -221,12 +230,14 @@ Homepage
 					F.A.Q.
 					Eventi informativi: presentazioni Call for strategic projects
 					Documenti aggiornati al 23/10/2017 (tabella costi amministrativi....)
+					 ENPI CBC MED 2007-2013: Progetti approvati
 				 LIFE 2014-2020
 					NEWS: Consulenze e attività formative 2018
 					Bando LIFE 2018 - EU website
 					Bando LIFE 2018 - sito web Ministero dell’Ambiente e della tutela del territorio e del mare
 					Life Programme - EU website
 					LIFE Multi annual Work Programme
+					 LIFE 2014-2020: Progetti approvati
 				 INTERREG MEDiterranean
 					TERZA CALL PER PROGETTI MODULARI - APERTA
 					Seconda Call per Progetti modulari - CHIUSA
@@ -236,6 +247,7 @@ Homepage
 				 INTERREG MARITTIMO - IT  FR - MARITIME
 					IV Avviso: Pagina dedicata al Programma
 					II AVVISO: Lista dei progetti ammessi alla successiva fase di valutazione - Tutti e 9 i progetti in cui è coinvolto l’Ateneo sono stati ammessi alla seconda fase
+					 INTERREG MARITTIMO-IT FR-MARITIME: Progetti approvati
 				 Archivio bandi scaduti
 			 Programmi di ricerca internazionali
 				 Horizon 2020
@@ -246,6 +258,7 @@ Homepage
 					 Consulenza e attività formativa - Protocollo SR, UniCa e Uniss
 					 Documenti utili
 				 Progetto SUPERA
+					 Brochure SUPERA
 				 Horizon Europe
 					Horizon Europe - the next research and innovation framework programme
 					APRE - Obiettivo FP9: Horizon Europe
@@ -271,6 +284,7 @@ Homepage
 					 Maggio e Giugno 2019
 					 Marzo e Aprile 2019
 			 Progettazione Erasmus+
+				EDUC
 			 Gli accordi internazionali di UniCa
 			 Foresteria - Guest house
 			 Summer and Winter Schools
@@ -296,11 +310,15 @@ Homepage
 					Funding opportunities and job vacancies
 					Expired funding opportunities and job vacancies
 				 Programma Mobilità Giovani Ricercatori (MGR)
+					Formulario per la presentazione delle candidature
+					 Programma MGR Mobilità Giovani Ricercatori Avviso 2018 (chiuso)
 		Personale TA
 			 Circolo Ricreativo
+				Sito del circolo ricreativo
 			 Concorsi
 			 Incarichi dirigenziali  - Avvisi interni
 			 Lavoro agile
+				Regolamento Lavoro Agile
 			 Mobilità personale
 				 Mobilità esterna
 			 PEO 2017 - Progressioni economiche orizzontali personale T.A.
@@ -311,8 +329,10 @@ Homepage
 			 Webmail
 			 Intranet
 			 Rubrica telefonica
+				Segnala errori nella rubrica
 			 U-gov
 			 Office 365 per il personale
+				Scarica il software dall'app store per Windows Mobile, iOS e Android
 			 Vecchio sito unica
 		Qualità e miglioramento
 			 Avvisi
@@ -345,6 +365,7 @@ Homepage
 				Relazioni Annuali delle Commissioni Paritetiche Docenti Studenti (AREA RISERVATA)
 				Monitoraggio Annuale e Riesame dei Corsi di Studio (SMA e RCR)
 				Report Carriere Studenti (AREA RISERVATA)
+				Scheda Unica Annuale della Ricerca Dipartimentale (SUA-RD)
 			 Progetti
 				 DISCENTIA
 				 Internazionalizzazione
@@ -353,6 +374,7 @@ Homepage
 					 A.A. 2018/2019
 					 A.A. 2017/2018
 					 A.A. 2016/2017
+					Anni precedenti
 		Sostieni UniCa
 			 5 x mille
 				"AMMINISTRAZIONE TRASPARENTE": come l’Università di Cagliari utilizza i fondi del 5xmille
@@ -382,13 +404,16 @@ Homepage
 			 Giornate dell'orientamento
 			 Open Day
 			 AlmaOrìentati
+				Sito  AlmaOrièntati
 			 Contatta le segreterie
+				Diploma supplement
 			 Tutori dell'orientamento
 			 Test anni precedenti
 				 TEST FACOLTÀ DI BIOLOGIA E FARMACIA
 				 TEST FACOLTÀ DI INGEGNERIA E ARCHITETTURA
 					Ingegneria per l’ambiente e il territorio
 				 TEST FACOLTÀ DI MEDICINA E CHIRURGIA
+					Test corsi di laurea della facoltà di Medicina e Odontoiatria
 				 TEST FACOLTÀ DI SCIENZE
 				 TEST FACOLTÀ DI SCIENZE ECONOMICHE, GIURIDICHE E POLITICHE
 				 TEST FACOLTÀ DI STUDI UMANISTICI
@@ -499,11 +524,13 @@ Homepage
 				 Normativa
 				 Elenco dei corsi di dottorato
 				 Borse di studio PON-R&I
+					Sito web PON Ricerca e Innovazione
 					 PON 2016
 					 PON 2017
 					 PON 2018
 					 PON 2019
 				 Borse di studio POR-FSE
+					Sito web SardegnaProgrammazione
 					 XXXV ciclo
 					 XXXIII Ciclo
 					 XXXII Ciclo
@@ -513,23 +540,28 @@ Homepage
 					 XXVII Ciclo
 					 XXVI Ciclo
 				 Cotutela di tesi
+					Mappa delle cotutele attivate dal XXIX ciclo
 				 Doctor Europaeus
 				 Avvisi e scadenze
 				 Archivio bandi scaduti
 				 Modulistica
 			 Master
 				 Normativa
+					Regolamento di Ateneo per l’istituzione e il funzionamento dei master
 				 Avvisi e scadenze
 				 Master approvati (prossima pubblicazione)
 				 Bandi scaduti
 			 Calendario accademico
 			 Corsi di formazione
+				Centro di servizio di Ateneo per la didattica e l’inclusione nell’alta formazione delle professionalità educative (CEDIAF)
 		Tasse
 			 Esoneri tasse e premialità
 			 Istruzioni pagamento
+				Sito PagoPA
 			 Modulistica
 			 Regolamenti
 			 Borse di studio
+				Sito dell'ERSU di Cagliari
 		Orientamento in itinere
 		Passaggio di corso
 		Studiare all'estero
@@ -540,12 +572,14 @@ Homepage
 			 Segreterie studenti
 			 Help servizi online
 			 e-Learning
+				Sito e-Learning UniCa
 			 Posta studenti
 				Accedi al servizio
 				Informazioni sulle guide d’uso e di configurazione della casella di posta
 				Microsoft Office 365 per gli studenti di UniCa
 			 Counseling psicologico
 			 Wifi
+				Vai al sito Unicamente
 			 Tessera Baby
 			 Stanze Rosa
 				Notizia sull'inaugurazione delle Stanze Rosa
@@ -557,7 +591,6 @@ Homepage
 			 Office 365 per gli studenti
 				Informazioni su come utilizzare i prodotti - pagina dedicata su Microsoft Education:
 				Store education
-				Scarica il software dall'app store per Windows Mobile, iOS e Android
 			 Grandi atleti
 			 Borsa Intesa Sanpaolo
 		Associazioni Studentesche
@@ -569,6 +602,7 @@ Homepage
 			 Avvisi
 			 Graduatorie
 			 Faq
+				Istruzioni per la compilazione della domanda on-line
 			 Istruzioni per la compilazione online della domanda per la partecipazione alla selezione delle COLLABORAZIONI STUDENTESCHE
 				Servizi on-line per gli studenti (area riservata)
 		Non solo università (Vivere a Cagliari)
@@ -578,6 +612,7 @@ Homepage
 				 Apple e Microsoft
 			 Trasporti
 			 Medico degli studenti
+				INFORMAZIONI pubblicate sul sito dell'Ersu di Cagliari
 			 Alloggiare
 			 Ristorazione
 	Laureati
@@ -661,6 +696,7 @@ Homepage
 			 Borse di ricerca
 		Valutazione della ricerca
 			 Valutazione della qualità della ricerca (Vqr 2011-2014)
+				Rapporto finale
 			 Scheda unica annuale della ricerca nei dipartimenti 2014 (Sua-Rd 2014)
 			 Valutazione della qualità della ricerca (Vqr 2004-2010)
 		Accordi con enti di ricerca
@@ -671,6 +707,7 @@ Homepage
 		Centri di ricerca
 		Finanziamenti alla ricerca
 			 Servizio Trova Bandi
+				Accedi al Servizio Trova Bandi
 			 Contributi d'ateneo
 				 Progetti di rilevante interesse dipartimentale (Prid)
 				 Progetti biennali finanziati dalla Fondazione di Sardegna
@@ -682,11 +719,14 @@ Homepage
 				 Visiting scientist
 			 Legge regionale 7/2007
 				 Pubblicazioni open access
+					Pubblica con UNICApress
 				 Ricerca di base
 				 Premialità
+					Legge regionale 7 agosto 2007, n° 7
 			 Bandi nazionali
 				 Pon Ricerca e innovazione 2014-2020
 				 Pon Aim - Attrazione e mobilità internazionale dei ricercatori
+					Sportello telematico Cineca
 				 Prin - Programmi di ricerca di rilevante interesse nazionale
 				 Fisr - Fondo integrativo speciale per la ricerca
 				 Sir - Scientific independence of young researchers
@@ -708,12 +748,14 @@ Homepage
 				 Programma giovani ricercatori Rita Levi Montalcini
 				 Bandi finanziati Ras
 				 Incentivi 2008
+					Decreto ministeriale 501 del 20 marzo 2003
 		Public engagement
 		Sardegna laboratori
 		Utilizzo spazi universitari
 			 Infrastrutture
 				 Progetto "Laboratori in rete"
 				 Laboratori Didattici - Por Fesr 2007-2013
+					Vai al Portale Laboratori
 				 Utenti
 			 Regolamenti
 			 Software disponibili
@@ -731,13 +773,16 @@ Homepage
 		Bandi di gara
 			 Gare forniture e servizi DAAC
 			 Gare forniture e servizi
+				Vai alle altre gare
 			 Gare lavori pubblici
 			 Atti di programmazione
+				Vai agli atti di programmazione di lavori, opere, servizi e forniture
 			 Vendita beni patrimoniali dell'Ateneo
 				 Vendite in corso
 				 Vendite concluse
 			 Fatturazione elettronica
 			 Progetto Unica Starts
+				Sito Unica Starts
 			 Centro di competenza ad alta specializzazione
 		Contamination lab
 		Alternanza scuola-lavoro
@@ -746,6 +791,7 @@ Homepage
 			 Catalogo progetti
 			 Documenti e modulistica
 			 Ufficio scolastico regionale
+				Sito Ufficio Scolastico Regionale
 	UniCa News
 		Notizie
 		Avvisi
