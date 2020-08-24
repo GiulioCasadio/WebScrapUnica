@@ -161,19 +161,22 @@ def check_page(soup, alb):
     # verifico se la pagina è vuota
     check_empty_page(soup, alb)
 
+    # verifico se la pagina ha link ricorsivi
+    check_recurs_page(soup, alb)
+
 
 # verifica se la pagina è priva di contenuto
-def check_empty_page(soup, alb):
+def check_empty_page(soup_check, alb):
     cla = None
     aux = True  # presuppongo che la pagina sia corretta
 
     # controlli per ricerca link o div
-    sec = soup.find('section', {'class': 'contenuto'})
+    sec = soup_check.find('section', {'class': 'contenuto'})
     if sec is not None:
         cla = sec.find('div', {'class': 'col-lg-9'})
 
     # controllo se presente l'article con il seguente testo e poi se presente almeno un link o div
-    if (soup.find('article') is not None and soup.find('article').get_text() == "\n\r\nNessun contenuto trovato\t\t\t\n")\
+    if (soup_check.find('article') is not None and soup_check.find('article').get_text() == "\n\r\nNessun contenuto trovato\t\t\t\n")\
             or (cla is not None and cla.find('a') is None and cla.find('div') is None):
         aux = False
 
@@ -183,6 +186,27 @@ def check_empty_page(soup, alb):
         file_empty.write(s_href)
         file_empty.close()
 
+
+def check_recurs_page(soup_check, alb):
+    aux = True  # presuppongo che la pagina sia corretta
+
+    internal_link = soup_check.findChildren('ul', {'class': 'article-links-list'})
+    for i in range(len(internal_link)):
+        link_check = internal_link[i].findAll("li")
+        if len(link_check) > 1:  # più di un link
+            for j in range(len(link_check)):
+                if link_check[j].find('a')['href'] == alb.Contenuto['href']:
+                    aux = False
+
+        else:  # un solo link
+            if len(link_check) == 1 and link_check[0].find('a')['href'] == alb.Contenuto['href']:
+                aux = False
+
+    if not aux:  # se è false insomma
+        file_rec = open('list_recurs_page.txt', 'a')
+        s_href = alb.Contenuto['href'] + "\n"
+        file_rec.write(s_href)
+        file_rec.close()
 
 
 def delete_backups():
@@ -195,6 +219,10 @@ def delete_backups():
     file_empty = open("list_empty_page.txt", "w")
     file_empty.truncate()  # elimina il contenuto
     file_empty.close()
+
+    file_recurs = open("list_recurs_page.txt", "w")
+    file_recurs.truncate()  # elimina il contenuto
+    file_recurs.close()
 
 
 ##################################################################
@@ -254,11 +282,19 @@ while cho != '0':
 
             else:
                 if cho == '3':  # ricerca errori
+                    # pagine vuote
                     print("\nLista delle pagine non aventi contenuto:")
                     # stampa tutti link.
                     file2 = open("list_empty_page.txt", "r")
                     print(file2.read())
                     file2.close()
+
+                    # pagine ricorsive
+                    print("\nLista delle pagine con link che richiamano alla stessa pagina:")
+                    # stampa tutti link.
+                    file3 = open("list_recurs_page.txt", "r")
+                    print(file3.read())
+                    file3.close()
                 else:
                     print("Nessuna opzione per questa scelta")
 
