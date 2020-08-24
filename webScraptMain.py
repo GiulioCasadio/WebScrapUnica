@@ -107,8 +107,11 @@ def insert_list_group(padre):
                             body_link(albe_da_inserire)
 
                         padre.figlio.append(albe_da_inserire)  # inserisco il sotto nodo
-                        # verifico se ci sono ulteriori figli e se sto analizzando il nodo corretto
 
+                        # controlli errori della pagina
+                        check_page(make_soup(albe_da_inserire.Contenuto['href']), albe_da_inserire)
+
+                        # verifico se ci sono ulteriori figli e se sto analizzando il nodo corretto
                         if direct_child_child[j+aux].find('ul') is not None:
                             h = 0
                             for h in range(len(direct_child_child[j+aux].findChildren('li'))):  # -> rettore..
@@ -117,6 +120,9 @@ def insert_list_group(padre):
                                 body_link(albe_da_inserire_deep)  # controllo body
                                 padre.figlio[j].figlio.append(albe_da_inserire_deep)
                                 aux += 1
+
+                                # controlli errori della pagina
+                                check_page(make_soup(albe_da_inserire_deep.Contenuto['href']), albe_da_inserire_deep)
 
     return padre
 
@@ -137,21 +143,21 @@ def body_link(alb):
                 if aux:
                     alb.figlio.append(link_check_href)
                     list_href.append(link_check_href.Contenuto['href'])
-                    try:
-                        # controllo se dentro questa pagina son presenti ulteriori link
-                        soup_next = make_soup(link_check_href.Contenuto['href'])
-                        if soup_next is not None \
-                                and soup_next.find("base") is not None \
-                                and soup_next.find("base") == "href=\"https://www.unica.it/unica/":  # verifica dominio
-
-                            # controllo errori
-                            check_page(soup_next, link_check_href)
-
-                        #     body_link(link_check_href)
-                    except requests.exceptions.SSLError:
-                        print("An exception occurred")
-                    except requests.exceptions.ConnectionError:
-                        print("An exception occurred")
+                    # try:
+                    #     # controllo se dentro questa pagina son presenti ulteriori link
+                    #     soup_next = make_soup(link_check_href.Contenuto['href'])
+                    #     if soup_next is not None \
+                    #             and soup_next.find("base") is not None \
+                    #             and soup_next.find("base") == "href=\"https://www.unica.it/unica/":  # verifica dominio
+                    #
+                    #         # controllo errori
+                    #         check_page(soup_next, link_check_href)
+                    #
+                    #     #     body_link(link_check_href)
+                    # except requests.exceptions.SSLError:
+                    #     print("An exception occurred")
+                    # except requests.exceptions.ConnectionError:
+                    #     print("An exception occurred")
             else:
                 if len(link_check) == 1:
                     aux = True
@@ -164,15 +170,15 @@ def body_link(alb):
                             alb.figlio.append(link_check_href)
                             list_href.append(link_check_href.Contenuto['href'])
 
-                            # controllo se dentro questa pagina son presenti ulteriori link
-                            soup_next = make_soup(link_check_href.Contenuto['href'])
-                            if soup_next is not None \
-                                    and soup_next.find("base") is not None \
-                                    and soup_next.find("base") == "href=\"https://www.unica.it/unica/":  # verifica dominio
-
-                                # controllo errori
-                                check_page(soup_next, link_check_href)
-                            #     body_link(link_check_href)
+                        #     # controllo se dentro questa pagina son presenti ulteriori link
+                        #     soup_next = make_soup(link_check_href.Contenuto['href'])
+                        #     # if soup_next is not None \
+                        #     #         and soup_next.find("base") is not None \
+                        #     #         and soup_next.find("base") == "href=\"https://www.unica.it/unica/":  # verifica dominio
+                        #
+                        #     # controllo errori
+                        #     #    check_page(soup_next, link_check_href)
+                        #     #     body_link(link_check_href)
                         except requests.exceptions.SSLError:
                             print("An exception occurred")
                         except requests.exceptions.ConnectionError:
@@ -197,7 +203,7 @@ def check_empty_page(soup, alb):
     if sec is not None:
         cla = sec.find('div', {'class': 'col-lg-9'})
 
-    # controllo se presente l'article con il seguente testo e poise presente almeno un link o div
+    # controllo se presente l'article con il seguente testo e poi se presente almeno un link o div
     if (soup.find('article') is not None and soup.find('article').get_text() == "\n\r\nNessun contenuto trovato\t\t\t\n")\
             or (cla is not None and cla.find('a') is None and cla.find('div') is None):
         aux = False
