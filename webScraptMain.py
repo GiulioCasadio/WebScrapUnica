@@ -187,6 +187,7 @@ def check_empty_page(soup_check, alb):
         file_empty.close()
 
 
+# non funziona perfettamente. Alvune pagine mantengono stesso contenuto ma cambiano link
 def check_recurs_page(soup_check, alb):
     aux = True  # presuppongo che la pagina sia corretta
 
@@ -230,9 +231,9 @@ def delete_backups():
 ##################################################################
 
 # tree = None  # albero finale, inizalmente contiene solo la radice
-# soup = make_soup('https://www.unica.it/unica/it/ateneo_s07_ss05_sss02_ssss01.page')
+# soup = make_soup('https://unica.it/unica/it/ateneo_s01_ss01_sss07_03_s06.page?contentId=GNC167443')
 #
-# check_empty_page(soup, tree)
+# check_recurs_page(soup, tree)
 
 ##################################################################
 
