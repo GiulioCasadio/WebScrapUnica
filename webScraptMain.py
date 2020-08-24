@@ -142,8 +142,23 @@ def body_link(alb):
                     if link_check_href.Contenuto['href'] == old_h:
                         aux = False
                 if aux:
-                    alb.figlio.append(link_check_href)
                     list_href.append(link_check_href.Contenuto['href'])
+
+                    # controllo se sono presenti altri link dentro questo link (solo se appartiene a Unica)
+                    try:
+                        soup_next = make_soup(link_check_href.Contenuto['href'])
+                        if soup_next is not None \
+                                and soup_next.find("base") is not None \
+                                and soup_next.find("base")['href'] == "https://unica.it/unica/":  # verifica dominio
+                            body_link(link_check_href)
+
+                    except requests.exceptions.SSLError:
+                        print("An exception occurred")
+                    except requests.exceptions.ConnectionError:
+                        print("An exception occurred")
+
+                    # aggiungo il nodo figlio all'albero
+                    alb.figlio.append(link_check_href)
 
         else:
             if len(link_check) == 1:  # un solo link
@@ -153,8 +168,24 @@ def body_link(alb):
                     if link_check_href.Contenuto['href'] == old_h:
                         aux = False
                 if aux:
-                    alb.figlio.append(link_check_href)
                     list_href.append(link_check_href.Contenuto['href'])
+
+                    # controllo se sono presenti altri link dentro questo link (solo se appartiene a Unica)
+                    try:
+                        soup_next = make_soup(link_check_href.Contenuto['href'])
+                        if soup_next is not None \
+                                and soup_next.find("base") is not None \
+                                and soup_next.find("base")['href'] is not None \
+                                and soup_next.find("base")['href'] == "https://unica.it/unica/":  # verifica dominio
+                            body_link(link_check_href)
+
+                    except requests.exceptions.SSLError:
+                        print("An exception occurred")
+                    except requests.exceptions.ConnectionError:
+                        print("An exception occurred")
+
+                    # aggiungo il nodo figlio all'albero
+                    alb.figlio.append(link_check_href)
 
 
 def check_page(soup, alb):
@@ -170,6 +201,9 @@ def check_empty_page(soup_check, alb):
     cla = None
     aux = True  # presuppongo che la pagina sia corretta
 
+    with open("list_empty_page.txt", "r") as fp:
+        lines = fp.readlines()
+
     # controlli per ricerca link o div
     sec = soup_check.find('section', {'class': 'contenuto'})
     if sec is not None:
@@ -181,10 +215,15 @@ def check_empty_page(soup_check, alb):
         aux = False
 
     if not aux:  # se è false insomma
-        file_empty = open('list_empty_page.txt', 'a')
-        s_href = alb.Contenuto['href'] + "\n"
-        file_empty.write(s_href)
-        file_empty.close()
+        re = False  # controllo se questa riga è già stata segnata
+        for i in range(len(lines)):
+            if lines == alb.Contenuto['href'] + "\n":
+                re = True
+        if not re:
+            file_empty = open('list_empty_page.txt', 'a')
+            s_href = alb.Contenuto['href'] + "\n"
+            file_empty.write(s_href)
+            file_empty.close()
 
 
 # non funziona perfettamente. Alvune pagine mantengono stesso contenuto ma cambiano link
@@ -230,10 +269,11 @@ def delete_backups():
 #                       AREA DEI TEST                            #
 ##################################################################
 
-# tree = None  # albero finale, inizalmente contiene solo la radice
+
 # soup = make_soup('https://unica.it/unica/it/ateneo_s01_ss01_sss07_03_s06.page?contentId=GNC167443')
 #
-# check_recurs_page(soup, tree)
+#
+# b = soup.find("base")['href']
 
 ##################################################################
 
@@ -300,7 +340,6 @@ while cho != '0':
                     print("Nessuna opzione per questa scelta")
 
 
-# link ricorsivi
 # vecchio layout pagine unica
 #
 
