@@ -1,0 +1,776 @@
+Homepage
+	COVID19 - Didattica a distanza
+		Microsoft Teams
+			 F.A.Q. Microsoft Teams
+			 Manuali Microsoft Teams
+		Moodle
+		Adobe Connect
+	Ateneo
+		Organizzazione
+			 Organi accademici
+				 Rettore
+					Documento Strategico di Programmazione Integrata 2017-2021
+					Linee strategiche 2016-2021
+					 Inaugurazione Anni Accademici
+					 Iniziative seminariali del Rettore
+					 Lauree honoris causa
+					 Cronologia Rettori dell’Ateneo
+					 Archivio documenti strategici precedenti Rettori
+					 Comitato di Indirizzo d'Ateneo
+				 Prorettori e delegati
+				 Ufficio di gabinetto
+				 Senato accademico
+					 Decreti di aggiornamento della composizione del Senato Accademico
+					 Verbali SA
+					 Resoconti sedute SA
+				 Consiglio d'Amministrazione
+					 Decreti di aggiornamento della composizione del CdA
+					 Verbali CdA
+					 Resoconti sedute CdA
+				 Collegio dei revisori dei conti
+				 Nucleo di valutazione
+					 Decreti composizione NVA
+					 Verbali NVA
+					 Attività
+				 Consiglio degli studenti
+				 Garante degli studenti
+				 Comitato unico di garanzia
+			 Direzione generale
+			 Direzioni
+				 Direzione acquisti e appalti
+				 Direzione ambiente, sicurezza, qualità e audit
+				 Direzione amministrazione e finanza
+					 Bilancio
+					 Bilancio sociale
+					 Modulistica
+					 Documenti
+					 Avvisi
+				 Direzione investimenti, manutenzione immobili e impianti
+					 Progetto asilo nido
+					 Antincendio
+				 Direzione per i servizi agli studenti e servizi generali
+				 Direzione per i servizi bibliotecari e attività museali
+				 Direzione per la didattica e l'orientamento
+					 S.I.A. – Servizi per l'Inclusione e l'Apprendimento
+					 Documenti
+				 Direzione per la ricerca e il territorio
+					Servizio Trova Bandi
+					 Piattaforma Iris
+					 Valutazione della ricerca
+					 Liaison office, enti, imprese
+					 Consorzi, centri di competenza
+					 Protocolli e convenzioni
+				 Direzione personale, organizzazione, performance
+					 Posizioni organizzative e affidamenti-2019
+					 Manuale trasparenza
+					 Classi stipendiali professori e ricercatori
+					 Premialità mancato scatto docenti e ricercatori
+					 Procedura valutativa di chiamata riservata ai ricercatori tdb
+					 Affari generali, servizi ispettivi e procedimenti disciplinari
+					 Assegni di ricerca
+					 Carriere personale T.A. e organizzazione
+					 Concorsi
+					 Contratti art.3 DM 1047/2017
+					 Docenti I,II Fascia, contratti e lettori
+					 Formazione
+					 Pensioni e atti presupposti
+					 Ricercatori
+					 Valutazione e Curriculum
+					 Modulistica
+				 Direzione sistemi, infrastrutture, dati
+					Helpdesk per assistenza
+					Vecchio sito della direzione per le reti e i servizi informatici
+					Galleria immagini Data Center via Marengo
+					 Modulistica
+					 Normativa
+					 Guide
+					 Informazioni su aggiornamento dei sistemi in hosting CINECA
+			 Uffici di staff
+				 Servizio di prevenzione e protezione
+					 COVID-19
+					 Area Riservata
+					 Organizzazione della sicurezza
+					 Cosa fare per...
+					 Formazione/informazione
+					 Gestione delle emergenze
+					 Links
+					 Modulistica
+					 Riferimenti legislativi e Disposizioni interne
+					 Rifiuti speciali
+					 Sorveglianza Sanitaria
+				 Ufficio per la valutazione
+			 Altri organi
+				 Presidio della Qualità di Ateneo (PQA)
+					Vecchio sito del Presidio della Qualità di Ateneo
+				 Commissione etica
+				 Collegio di disciplina
+				 Comitato per lo sport universitario
+				 Servizio di Fisica Sanitaria e Radioprotezione
+				 Organismo per il benessere degli animali
+			 Relazioni sindacali
+			 Elezioni
+				 Rettore
+				 Senato accademico
+				 Studenti
+				 ATA
+				 CNSU
+				 CUN
+				 ERSU
+				 RSU
+		Dipartimenti e Facoltà
+			 Facoltà: Presidenti dei Consigli
+			 Facoltà: Segretari di Presidenza
+			 Coordinatori Corsi di Laurea / Studio / Classe
+			 Facoltà: Coordinatori didattici
+			 Dipartimenti: Direttori
+			 Dipartimenti: Segretari
+			 Dipartimenti: Regolamenti
+		Altre strutture
+			 Laboratori
+				 Polo umanistico
+				 Polo scienze sociali
+				 Polo ingegneria e architettura
+				 Polo scientifico
+				 Laboratori Didattici Condivisi (LDC)
+			 Sistema Bibliotecario d'Ateneo
+				 Risorse
+				 Servizi
+				 Biblioteche
+				 Organizzazione
+				 News SbA
+			 Musei
+				 Museo Sardo di Antropologia ed Etnografia
+				 Museo di Zoologia
+			 Centri d'Ateneo
+			 Aule informatiche e studio
+			 Orto Botanico
+			 Azienda Ospedaliera Universitaria
+			 Centro universitario sportivo (CUS)
+			 Mappa delle strutture
+			 Centro Linguistico d'Ateneo
+				 Organizzazione
+				 Servizi
+				 Statuto e regolamenti
+				 Notizie
+				 Nuovo progetto Lingua Inglese
+				 Bandi e selezioni
+		Internazionale
+			 Mobilità Internazionale
+				 Emergenza Coronavirus studenti in mobilità
+					Coronavirus:  Decreto su autoisolamento per chi rientra in Italia
+					Indicazioni Agenzia Nazionale per l'Istruzione Superiore
+					Informazioni per gli Istituti beneficiari Erasmus+ sulle coperture assicurative degli studenti
+					ulteriori-indicazioni-dall' agenzia-nazionale-erasmus-indire-a-seguito-di-aggiornamenti-dalla-commissione-europea/
+				 Coronavirus Outbreak - Guidelines for incoming students
+					Instructions on online exams office 365
+					E_learning Information
+				 Study at UniCa!   General Information for Exchange, Visiting and Enrolled Students
+					 University of Cagliari: Presentation and Brochure
+					 Coronavirus Outbreak
+					 Useful information for Erasmus+/Globus/Visiting Students
+					 Academic Information
+					 Study at UniCa as a regular student
+					 Italian Language Courses for Incoming Students
+					 Why study  in Cagliari?
+					 Accommodation in Cagliari
+					 ISMOKA Mobility Office Contacts
+					 News
+					Welcome Day Erasmus Luna Rossa 2019
+					Green Erasmus Day 2019
+				 Incoming Staff
+					Staff Mobility for Teaching
+					Staff Mobility for Training
+					ICM KA107
+				 Mobilità Studenti
+					Erasmus+
+					Globus
+					Altri programmi di Mobilità: Maeci, Vulcanus, Freemover, Premilaurea
+					Opportunità dal mondo
+					Partner e Accordi di UniCa in Erasmus
+					Avvisi mobilità studenti
+				 Mobilità Dottorandi e Specializzandi
+					 Globusdoc
+					 Avvisi Mobilità Dottorandi e Specializzandi
+				 Mobilità Docenti e Ricercatori
+					Visiting Professor/Scientist Programme
+					Euraxess Centre for researchers mobility
+					Programma Mobilità Giovani Ricercatori (MGR)
+					Mobilità Docenti Erasmus+ (MOSTA )
+					Mobilità Docenti Erasmus + (MOSUE)
+					Mobilità Docenti Globus (MOSGLOB)
+					Programma ICM (International Credit Mobility): Erasmus+ KA107
+					Avvisi Mobilità Docenti e Ricercatori
+				 Mobilità Personale Tecnico Amministrativo
+					 Unica For Staff
+					 Erasmus+ KA107- ICM (International Credit Mobility)
+				 Confucio, Formed, Unica4Refugees ...
+					Aula Confucio Unica
+					Sardegna ForMed
+					Unica4Refugees
+				 Corsi di Lingua Erasmus  - Language courses Erasmus
+					Corsi di Lingua per Studenti UniCa in partenza
+				 Partner di UniCa in Erasmus+
+				 Linee guida dell'Ateneo e normativa di riferimento per la mobilità studentesca internazionale
+				 Contatti Ufficio Mobilità Internazionale  (ISMOKA)
+				 Contatti Sportelli Erasmus+ delle Facoltà
+				 Avvisi Mobilità Internazionale
+			 Cooperazione internazionale
+				 Bandi aperti
+				 ENI CBC MED
+					Sito ENI CBC MED
+					F.A.Q.
+					Eventi informativi: presentazioni Call for strategic projects
+					Documenti aggiornati al 23/10/2017 (tabella costi amministrativi....)
+				 LIFE 2014-2020
+					NEWS: Consulenze e attività formative 2018
+					Bando LIFE 2018 - EU website
+					Bando LIFE 2018 - sito web Ministero dell’Ambiente e della tutela del territorio e del mare
+					Life Programme - EU website
+					LIFE Multi annual Work Programme
+				 INTERREG MEDiterranean
+					TERZA CALL PER PROGETTI MODULARI - APERTA
+					Seconda Call per Progetti modulari - CHIUSA
+					Call per Progetti orizzontali - CHIUSA
+					Prima Call per Progetti modulari - CHIUSA
+					Programme Manual
+				 INTERREG MARITTIMO - IT  FR - MARITIME
+					IV Avviso: Pagina dedicata al Programma
+					II AVVISO: Lista dei progetti ammessi alla successiva fase di valutazione - Tutti e 9 i progetti in cui è coinvolto l’Ateneo sono stati ammessi alla seconda fase
+				 Archivio bandi scaduti
+			 Programmi di ricerca internazionali
+				 Horizon 2020
+					Sito Horizon 2020
+					Funding & tender opportunities (Participant Portal)
+					APRE - Agenzia per la Promozione della Ricerca Europea
+					 Progetti finanziati
+					 Consulenza e attività formativa - Protocollo SR, UniCa e Uniss
+					 Documenti utili
+				 Progetto SUPERA
+				 Horizon Europe
+					Horizon Europe - the next research and innovation framework programme
+					APRE - Obiettivo FP9: Horizon Europe
+				 Finanziamenti programmi Nord America
+					 Progetti finanziati
+					 Documenti e Link utili
+				 Altri finanziamenti
+					 Progetti finanziati
+					 Documenti e Link utili
+				 7PQ
+				 Bandi
+				 Notizie & Eventi
+				 Raccolta APRE Weekly
+					 Maggio 2020
+					 Marzo  e  Aprile 2020
+					 Febbraio 2020
+					 Gennaio 2020
+					 Dicembre 2019
+					 Novembre 2019
+					 Ottobre 2019
+					 Settembre 2019
+					 Luglio e Agosto 2019
+					 Maggio e Giugno 2019
+					 Marzo e Aprile 2019
+			 Progettazione Erasmus+
+			 Gli accordi internazionali di UniCa
+			 Foresteria - Guest house
+			 Summer and Winter Schools
+			 EDUC
+		Storia dell'Ateneo
+			 Atti di fondazione
+			 Documenti di rifondazione
+			 Stemma dell'università e identità visiva
+		L’Ateneo in cifre
+		Docenti e ricercatori
+			 Servizi online per i docenti
+				Sito per servizio online docenti
+				Vai al Portale per i titolari di firma remota (per modifica PIN, cellulare, e rinnovo certificato)
+			 Concorsi personale docente e ricercatori
+			 Mobilità docenti e ricercatori
+				 Visiting Professor/Scientist Programme
+					Dove siamo
+					Mappa Visiting Professor dal 2016
+					 Informazioni utili per il soggiorno a Cagliari
+					 Lezioni e seminari dei Visiting Professor
+					 Archivio bandi scaduti
+				 Euraxess Centre for researchers mobility
+					Funding opportunities and job vacancies
+					Expired funding opportunities and job vacancies
+				 Programma Mobilità Giovani Ricercatori (MGR)
+		Personale TA
+			 Circolo Ricreativo
+			 Concorsi
+			 Incarichi dirigenziali  - Avvisi interni
+			 Lavoro agile
+			 Mobilità personale
+				 Mobilità esterna
+			 PEO 2017 - Progressioni economiche orizzontali personale T.A.
+			 PEO 2018 - Progressioni economiche orizzontali personale T.A.
+			 PEO 2019 - Progressioni economiche orizzontali personale T.A.
+			 Turnazione parcheggi
+		Servizi al personale
+			 Webmail
+			 Intranet
+			 Rubrica telefonica
+			 U-gov
+			 Office 365 per il personale
+			 Vecchio sito unica
+		Qualità e miglioramento
+			 Avvisi
+			 Normativa
+				Statuto dell'Università degli Studi di Cagliari
+				Regolamento Didattico di Ateneo
+				Nota MIUR n. 3315 del 1 febbraio 2019 – Nuove linee guida per l'accreditamento dei corsi di dottorato
+				Decreto Ministeriale n. 6 del 7 gennaio 2019 – Autovalutazione, valutazione, accreditamento iniziale e periodico delle sedi e dei corsi di studio
+				Decreto Interministeriale n. 402 del 13 giugno 2017 – Standard, requisiti e indicatori di attività formativa e assistenziale delle Scuole di Specializzazione di area sanitaria
+				Decreto Legislativo n. 19 del 27 gennaio 2012 – Valorizzazione dell'efficienza delle università e conseguente introduzione di meccanismi premiali nella distribuzione di risorse pubbliche sulla base di criteri definiti ex ante
+				Legge n. 240 del 30 dicembre 2010 – Norme in materia di organizzazione delle università, di personale accademico e reclutamento, nonché delega al Governo per incentivare la qualità e l'efficienza del sistema universitario
+				Decreto del Presidente della Repubblica n. 76 del 1 febbraio 2010 – Regolamento concernente la struttura ed il funzionamento dell'Agenzia nazionale di valutazione del sistema universitario e della ricerca (ANVUR)
+				Decreto Ministeriale 16 marzo 2007 – Determinazione delle classi di laurea magistrale (GU Serie Generale n.157 del 09-07-2007 - Suppl. Ordinario n. 155)
+				Decreto Ministeriale 16 marzo 2007 – Determinazione delle classi delle lauree universitarie (GU Serie Generale n.155 del 06-07-2007 - Suppl. Ordinario n. 153)
+				Decreto Ministeriale n. 270 del 22 ottobre 2004 – Modifiche al regolamento recante norme concernenti l'autonomia didattica degli atenei, approvato con decreto del Ministro dell'università e della ricerca scientifica e tecnologica 3 novembre 1999, n. 509
+				Linee guida per l’Accreditamento Iniziale dei Corsi di Studio
+				Linee guida per l’Accreditamento Periodico delle Sedi e dei Corsi di Studio universitari
+				Linee guida per la compilazione della SUA-Terza Missione e Impatto Sociale
+			 Soggetti
+				 Organi di Governo
+				 Altri Organi e Strutture Centrali
+				 Strutture per la Didattica e la Ricerca
+				 Organi e Strutture per i Servizi di Contesto
+			 Attività
+			 Documenti
+				Politiche della Qualità di Ateneo
+				Politiche per il supporto agli studenti con disabilità
+				Relazioni del Presidio della Qualità di Ateneo (AREA RISERVATA)
+				Scheda Unica Annuale dei Corsi di Studio (SUA-CdS)
+				Relazioni Annuali delle Commissioni Paritetiche Docenti Studenti (AREA RISERVATA)
+				Monitoraggio Annuale e Riesame dei Corsi di Studio (SMA e RCR)
+				Report Carriere Studenti (AREA RISERVATA)
+			 Progetti
+				 DISCENTIA
+				 Internazionalizzazione
+			 Valutazione della didattica
+				 Studenti
+					 A.A. 2018/2019
+					 A.A. 2017/2018
+					 A.A. 2016/2017
+		Sostieni UniCa
+			 5 x mille
+				"AMMINISTRAZIONE TRASPARENTE": come l’Università di Cagliari utilizza i fondi del 5xmille
+			 La Donazione
+		Pagamenti pagoPA
+		Bandi di concorso
+		Normativa
+			 Statuto
+			 Generali
+			 Centri di servizio
+			 Centri di ricerca
+			 Centri interdipartimentali
+			 Centri interuniversitari
+			 Didattica
+			 Ricerca di base e applicata
+			 Finanziari
+			 Personale e formazione
+			 Edilizia
+			 Circolari
+			 Linee guida
+			 Servizi agli studenti e servizi generali
+		In ricordo di
+	Futuri studenti
+		Orientamento
+			 Guida per lo studente
+			 Manifesto degli Studi
+			 Giornate dell'orientamento
+			 Open Day
+			 AlmaOrìentati
+			 Contatta le segreterie
+			 Tutori dell'orientamento
+			 Test anni precedenti
+				 TEST FACOLTÀ DI BIOLOGIA E FARMACIA
+				 TEST FACOLTÀ DI INGEGNERIA E ARCHITETTURA
+					Ingegneria per l’ambiente e il territorio
+				 TEST FACOLTÀ DI MEDICINA E CHIRURGIA
+				 TEST FACOLTÀ DI SCIENZE
+				 TEST FACOLTÀ DI SCIENZE ECONOMICHE, GIURIDICHE E POLITICHE
+				 TEST FACOLTÀ DI STUDI UMANISTICI
+			 Altri eventi di orientamento
+			 Schede dei corsi di studio (dati Almalaurea)
+		Iscrizioni
+			 Accesso libero
+				 Bandi e scadenze
+			 Accesso programmato
+				 Bandi e scadenze
+			 Immatricolazione online
+			 Corsi singoli
+	Studenti
+		Corsi di studio
+			 Lauree Triennali
+				Amministrazione e Organizzazione
+				Assistenza Sanitaria
+				Beni Culturali e Spettacolo
+				Biologia
+				Biotecnologie
+				Chimica
+				Economia e Finanza
+				Economia e Gestione Aziendale
+				Economia e Gestione dei Servizi Turistici
+				Educazione Professionale
+				Filosofia
+				Fisica
+				Fisioterapia
+				Igiene Dentale
+				Infermieristica
+				Informatica
+				Ingegneria Biomedica
+				Ingegneria Chimica
+				Ingegneria Civile
+				Ingegneria Elettrica, Elettronica e Informatica
+				Ingegneria Meccanica
+				Ingegneria per l'Ambiente e il Territorio
+				Lettere
+				Lingue e Comunicazione
+				Lingue e Culture per la Mediazione linguistica
+				Logopedia
+				Matematica
+				Ostetricia
+				Scienze Ambientali e Naturali
+				Scienze dei Servizi Giuridici
+				Scienze dell'Architettura
+				Scienze delle Attività Motorie e Sportive
+				Scienze della Comunicazione
+				Scienze dell'Educazione e della Formazione
+				Scienze e Tecniche Psicologiche
+				Scienze Geologiche
+				Scienze Naturali
+				Scienze Politiche
+				Scienze Tossicologiche e Controllo di Qualità
+				Tecniche della prevenzione nell’ambiente e nei luoghi di lavoro
+				Tecnica della Riabilitazione Psichiatrica
+				Tecniche di Laboratorio Biomedico
+				Tecniche di Radiologia Medica, per Immagini e Radioterapia
+				Tossicologia
+			 Lauree Magistrali
+				Archeologia e Storia dell'Arte
+				Architettura
+				Bio-Ecologia Marina
+				Biologia Cellulare e Molecolare
+				Computer Engineering, Cybersecurity and Artificial Intelligence
+				Conservazione e Gestione della Natura e dell’Ambiente
+				Data Science, Business Analytics e Innovazione
+				Economia, Finanza e Politiche Pubbliche
+				Economia Manageriale
+				Filologie e Letterature Classiche e Moderne
+				Filosofia e Teorie della Comunicazione
+				Fisica
+				Ingegneria Chimica e dei Processi Biotecnologici
+				Ingegneria delle Tecnologie per Internet
+				Ingegneria Elettrica
+				Ingegneria Elettronica
+				Ingegneria Energetica
+				Ingegneria per l'Ambiente e il Territorio
+				Lingue e Letterature Moderne Europee e Americane
+				Management e Monitoraggio del Turismo Sostenibile
+				Neuropsicobiologia
+				Politiche, Società e Territorio
+				Psicologia dello Sviluppo e dei Processi Socio-Lavorativi
+				Relazioni Internazionali
+				Scienze degli alimenti e della nutrizione
+				Scienze dell'Amministrazione
+				Scienze della Produzione Multimediale
+				Scienze delle Professioni Sanitarie della Prevenzione
+				Scienze delle Professioni Sanitarie Tecniche Diagnostiche
+				Scienze Economiche
+				Scienze e Tecnologie per l'Ambiente
+				Scienze Infermieristiche e Ostetriche
+				Scienze Pedagogiche e dei Servizi Educativi
+				Scienze Riabilitative delle Professioni Sanitarie
+				Storia e Società
+				Traduzione Specialistica dei Testi
+			 Lauree a ciclo unico
+				Chimica e Tecnologia Farmaceutiche
+				Farmacia
+				Giurisprudenza
+				Medicina e chirurgia
+				Odontoiatria e Protesi Dentaria
+				Scienze della formazione primaria
+			 Scuole di specializzazione
+				 Normativa
+				 Avvisi
+			 Dottorati di ricerca
+				 Normativa
+				 Elenco dei corsi di dottorato
+				 Borse di studio PON-R&I
+					 PON 2016
+					 PON 2017
+					 PON 2018
+					 PON 2019
+				 Borse di studio POR-FSE
+					 XXXV ciclo
+					 XXXIII Ciclo
+					 XXXII Ciclo
+					 XXX Ciclo
+					 XXIX Ciclo
+					 XXVIII Ciclo
+					 XXVII Ciclo
+					 XXVI Ciclo
+				 Cotutela di tesi
+				 Doctor Europaeus
+				 Avvisi e scadenze
+				 Archivio bandi scaduti
+				 Modulistica
+			 Master
+				 Normativa
+				 Avvisi e scadenze
+				 Master approvati (prossima pubblicazione)
+				 Bandi scaduti
+			 Calendario accademico
+			 Corsi di formazione
+		Tasse
+			 Esoneri tasse e premialità
+			 Istruzioni pagamento
+			 Modulistica
+			 Regolamenti
+			 Borse di studio
+		Orientamento in itinere
+		Passaggio di corso
+		Studiare all'estero
+		Tirocinio
+			 Modulistica
+		Laurearsi
+		Segreterie e altri servizi
+			 Segreterie studenti
+			 Help servizi online
+			 e-Learning
+			 Posta studenti
+				Accedi al servizio
+				Informazioni sulle guide d’uso e di configurazione della casella di posta
+				Microsoft Office 365 per gli studenti di UniCa
+			 Counseling psicologico
+			 Wifi
+			 Tessera Baby
+			 Stanze Rosa
+				Notizia sull'inaugurazione delle Stanze Rosa
+			 Carta UNICA
+				Notizia sulla presentazione della Carta UNICA
+				Foglio informativo del Banco di Sardegna
+			 Matlab
+			 Microsoft
+			 Office 365 per gli studenti
+				Informazioni su come utilizzare i prodotti - pagina dedicata su Microsoft Education:
+				Store education
+				Scarica il software dall'app store per Windows Mobile, iOS e Android
+			 Grandi atleti
+			 Borsa Intesa Sanpaolo
+		Associazioni Studentesche
+			 Albo Associazioni
+			 Associazioni iscritte all'Albo
+			 Bandi assegnazione contributi
+			 Archivio A.S.
+		Collaborazioni studentesche
+			 Avvisi
+			 Graduatorie
+			 Faq
+			 Istruzioni per la compilazione online della domanda per la partecipazione alla selezione delle COLLABORAZIONI STUDENTESCHE
+				Servizi on-line per gli studenti (area riservata)
+		Non solo università (Vivere a Cagliari)
+			 Studiare a cagliari
+			 Convenzioni
+				 CUS
+				 Apple e Microsoft
+			 Trasporti
+			 Medico degli studenti
+			 Alloggiare
+			 Ristorazione
+	Laureati
+		Formazione per i laureati
+			 Percorsi di specializzazione per le attività di sostegno
+				 Normativa corso di specializzazione per  le attività di sostegno
+				 Corso di specializzazione per  le attività di sostegno - Compiti degli anni precedenti
+			 Percorso formativo insegnanti (24 CFU) D.M. 616/2017
+				 Avvisi
+				 Normativa
+				 Avvisi edizioni passate
+		Tirocini formativi extracurriculari
+		Apprendistato di alta formazione e ricerca
+			 In alternativa
+		Accompagnamento al lavoro
+		Esami di stato
+			 Avvisi e scadenze Esami di Stato
+			 Normativa di riferimento
+			 Elenco abilitazioni
+				link alla riunione per l'esame di Stato
+				Calendario prove
+				Integrazione Decreto di nomina delle commissioni
+				Decreto Rettorale nomina commissioni I sessione 2020
+				Modifica svolgimento prove
+				Differimento date I sessione esami di Stato 2020
+				Esame di Stato 2020
+				Elenco abilitati all'esercizio della professione di BIOLOGO - I SESSIONE 2020
+				link di accesso alla riunione per lo svolgimento dell’Esame di Stato
+				Calendario I sessione 2020
+				 sessione 2020 - Indicazioni per i candidati
+				link di accesso alla riunione per lo svolgimento dell’Esame di Stato
+				link alla riunione per l'esame di Stato
+				Calendario I sessione 2020
+				Esame di Stato Dottore commercialista ed Esperto contabile II sessione 2019 - Elenco abilitati
+				link di accesso alla riunione per l'esame di Stato
+				Calendario prove aggiornato
+				Comunicazione aula Prove Integrative Revisore Legale II sessione 2019
+				Calendario prove integrative revisore Legale II sessione 2019
+				Calendario prove integrative Revisore Legale
+				Esame di Stato 2020
+				Esame di Stato Dottore commercialista ed Esperto contabile - Ammessi alla prova orale
+				Elenco abilitati dottore commercialista
+				Link di accesso alla riunione per lo svolgimento dell’Esame di Stato
+				Calendario I sessione 2020
+				Elenco abilitati all'esercizio della professione di GEOLOGO - I SESSIONE 2020
+				link alla riunione per l'esame di Stato
+				Calendario I sessione 2020
+				Elenco Abilitati all'esercizio della professione di INGEGNERE E INGEGNERE IUNIOR I sessione 2020
+				Calendario aggiornato - I commissione
+				Calendario Sez. B Commissione 2 aggiornato
+				link alla riunione per l'esame di Stato
+				Calendario I sessione 2020
+				Pubblicazione elenco abilitati alla professione di medico chirurgo I sessione 2020 ai sensi dell’art. 102 del D.L. n. 18 del 17 marzo 2020
+				D.R. 502/2020 Tirocini professionalizzanti
+				Inizio Tirocinio Pratico Valutativo
+				Spostamento data inizio tirocinio pratico valutativo I sessione 2020
+				Elenco abilitati II sessione 2019
+				Nuova data II sessione esame di Stato medico Chirurgo
+				Proroga domanda di ammissione I sessione 2020
+				Rinvio esame di Stato Medico Chirurgo II sessione 2019
+				Esame di stato Medico Chirurgo II sessione 2019 - convocazione candidati prova scritta e consegna libretti
+				Esame di Stato Medico Chirurgo I e II sessione 2020 - Bandi
+				Elenco abilitati I sessione 2020
+				Rettifica al Decreto di nomina commissioni
+				Esame di Stato 2020
+				link di accesso alla riunione per l'esame di Stato
+				Indicazioni ai candidati
+				Calendario prove
+				Tirocinio obbligatorio per l'esame di Stato - modulistica
+				Elenco abilitati  II sessione 2019
+				Esame di Stato Psicologo II sessione 2019 - Esiti 3° prova e convocazione prova orale
+		Borse e premi di laurea
+			 Borse di ricerca
+			 Premi di laurea
+			 Borse di studio e altri premi
+			 Migliori laureati e borse laureati in corso
+	Ricerca
+		Fare ricerca in UniCa
+			 Dottorati di ricerca
+			 Assegni di ricerca
+			 Borse di ricerca
+		Valutazione della ricerca
+			 Valutazione della qualità della ricerca (Vqr 2011-2014)
+			 Scheda unica annuale della ricerca nei dipartimenti 2014 (Sua-Rd 2014)
+			 Valutazione della qualità della ricerca (Vqr 2004-2010)
+		Accordi con enti di ricerca
+			 Accordo quadro tra il Crs4 e l'Università di Cagliari
+			 Convenzione quadro tra il Consiglio nazionale delle ricerche e l’università di Cagliari
+			 Convenzione tra la Sotacarbo spa, il comune di Carbonia e l’università di Cagliari
+			 Convenzione tra l’Infn e l’università di Cagliari
+		Centri di ricerca
+		Finanziamenti alla ricerca
+			 Servizio Trova Bandi
+			 Contributi d'ateneo
+				 Progetti di rilevante interesse dipartimentale (Prid)
+				 Progetti biennali finanziati dalla Fondazione di Sardegna
+				 Premialità didattica
+				 Fondo integrativo per la ricerca (Fir)
+			 Borse, Assegni di ricerca
+				 Assegni di ricerca
+				 Borse di ricerca
+				 Visiting scientist
+			 Legge regionale 7/2007
+				 Pubblicazioni open access
+				 Ricerca di base
+				 Premialità
+			 Bandi nazionali
+				 Pon Ricerca e innovazione 2014-2020
+				 Pon Aim - Attrazione e mobilità internazionale dei ricercatori
+				 Prin - Programmi di ricerca di rilevante interesse nazionale
+				 Fisr - Fondo integrativo speciale per la ricerca
+				 Sir - Scientific independence of young researchers
+					Bando
+					Integrazione bando del 15 settembre 2014
+					Programma Sir - Presentazione della domanda
+					Decreto direttoriale del 25 giugno 2015 - Ammissione al finanziamento dei progetti approvati
+					Decreto direttoriale del 3 giugno 2015 - Approvazione dei progetti
+					Decreto 28 aprile 2015 nr. 890 - Macrosettore Pe
+					Decreto 28 aprile 2015 nr. 905 - macrosettore Sh
+					Decreto 24 aprile 2015 nr. 856 - Ammissione alla fase delle audizioni delle proposte progettuali del macrosettore Ls
+					Decreto 4 marzo 2015 nr. 525 - settore Ls
+					Decreto 4 marzo 2015 nr. 526 - settore Sh
+					Decreto 4 marzo 2015 nr. 527 - settore Pe
+				 Firb - Fondo investimenti per la ricerca di base
+				 Legge 6/2000 - Contributi diffusione cultura scientifica
+				 Altri bandi
+			 Rientro cervelli
+				 Programma giovani ricercatori Rita Levi Montalcini
+				 Bandi finanziati Ras
+				 Incentivi 2008
+		Public engagement
+		Sardegna laboratori
+		Utilizzo spazi universitari
+			 Infrastrutture
+				 Progetto "Laboratori in rete"
+				 Laboratori Didattici - Por Fesr 2007-2013
+				 Utenti
+			 Regolamenti
+			 Software disponibili
+			 Prenotazione aule
+			 Attrezzature
+			 Videoconferenza
+		La ricerca a portata di mano
+	Enti e imprese
+		Unica e le imprese
+			 Servizi per le imprese
+				Portale Almalaurea per le imprese
+				Recruiting day e incontri con i laureati
+			 Accordi con enti locali
+			 Accordi con enti privati
+		Bandi di gara
+			 Gare forniture e servizi DAAC
+			 Gare forniture e servizi
+			 Gare lavori pubblici
+			 Atti di programmazione
+			 Vendita beni patrimoniali dell'Ateneo
+				 Vendite in corso
+				 Vendite concluse
+			 Fatturazione elettronica
+			 Progetto Unica Starts
+			 Centro di competenza ad alta specializzazione
+		Contamination lab
+		Alternanza scuola-lavoro
+			 Attivare un percorso
+			 Elenco istituti
+			 Catalogo progetti
+			 Documenti e modulistica
+			 Ufficio scolastico regionale
+	UniCa News
+		Notizie
+		Avvisi
+		Comunicati stampa
+		Rassegna stampa
+		Rivista
+		Eventi
+		RSS
+		Ufficio stampa e  Redazione web
+	Multimedia
+		Gallerie fotografiche
+		Video
+	Utility
+		Ricerca
+		Web mail
+		Help desk
+		Accessibilità
+		Mappa del sito
+		Valuta il sito
+		Info sul sito
+		Siti tematici
+		Contatti
+		Note legali
+		Privacy
+			 Informativa videosorveglianza
+		Informativa sui cookies
+		Albo online
+	Aree riservate
