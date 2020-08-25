@@ -1,4 +1,5 @@
 import requests
+import time
 from bs4 import BeautifulSoup
 
 # Strutture
@@ -108,9 +109,6 @@ def insert_list_group(padre):
 
                         padre.figlio.append(albe_da_inserire)  # inserisco il sotto nodo
 
-                        # controlli errori della pagina
-                        check_page(make_soup(albe_da_inserire.Contenuto['href']), albe_da_inserire)
-
                         # verifico se ci sono ulteriori figli e se sto analizzando il nodo corretto
                         if direct_child_child[j+aux].find('ul') is not None:
                             h = 0
@@ -145,17 +143,14 @@ def body_link(alb):
                     list_href.append(link_check_href.Contenuto['href'])
 
                     # controllo se sono presenti altri link dentro questo link (solo se appartiene a Unica)
-                    try:
-                        soup_next = make_soup(link_check_href.Contenuto['href'])
-                        if soup_next is not None \
-                                and soup_next.find("base") is not None \
-                                and soup_next.find("base")['href'] == "https://unica.it/unica/":  # verifica dominio
+                    if trova(link_check_href.Contenuto['href'], "unica.it"):
+                        try:
                             body_link(link_check_href)
 
-                    except requests.exceptions.SSLError:
-                        print("An exception occurred")
-                    except requests.exceptions.ConnectionError:
-                        print("An exception occurred")
+                        except requests.exceptions.SSLError:
+                            print("An SSLError occurred")
+                        except requests.exceptions.ConnectionError:
+                            print("A ConnectionError occurred")
 
                     # aggiungo il nodo figlio all'albero
                     alb.figlio.append(link_check_href)
@@ -171,21 +166,39 @@ def body_link(alb):
                     list_href.append(link_check_href.Contenuto['href'])
 
                     # controllo se sono presenti altri link dentro questo link (solo se appartiene a Unica)
-                    try:
-                        soup_next = make_soup(link_check_href.Contenuto['href'])
-                        if soup_next is not None \
-                                and soup_next.find("base") is not None \
-                                and soup_next.find("base")['href'] is not None \
-                                and soup_next.find("base")['href'] == "https://unica.it/unica/":  # verifica dominio
+                    if trova(link_check_href.Contenuto['href'], "unica.it"):
+                        try:
                             body_link(link_check_href)
 
-                    except requests.exceptions.SSLError:
-                        print("An exception occurred")
-                    except requests.exceptions.ConnectionError:
-                        print("An exception occurred")
+                        except requests.exceptions.SSLError:
+                            print("An SSLError occurred")
+                        except requests.exceptions.ConnectionError:
+                            print("A ConnectionError occurred")
 
                     # aggiungo il nodo figlio all'albero
                     alb.figlio.append(link_check_href)
+
+
+# cerca un parola dentro una stringa base
+def trova(base, ricerca):
+    res = 0
+    j = 0
+
+    for i in range(len(base)):
+        if base[i] == ricerca[j]:
+            res += 1  # match!
+            j += 1
+            if res == len(ricerca):  # controllo se ho raggiunto il risultato richiesto
+                break
+        else:
+            res = 0
+            j = 0
+
+    if res == len(ricerca):  # controllo se ho raggiunto il risultato richiesto
+        return True
+    else:
+        return False
+
 
 
 def check_page(soup, alb):
@@ -217,7 +230,7 @@ def check_empty_page(soup_check, alb):
     if not aux:  # se è false insomma
         re = False  # controllo se questa riga è già stata segnata
         for i in range(len(lines)):
-            if lines == alb.Contenuto['href'] + "\n":
+            if lines[i] == alb.Contenuto['href'] + "\n":
                 re = True
         if not re:
             file_empty = open('list_empty_page.txt', 'a')
@@ -269,11 +282,23 @@ def delete_backups():
 #                       AREA DEI TEST                            #
 ##################################################################
 
+# final_timer = float("966.04")
+# minuti = 0
+# sec = 0
+# dec = 0
+#
+# if float(final_timer) > 60:
+#     minuti = int(int(final_timer) / 60)
+# if float(final_timer) > 60:
+#     sec = (int(final_timer) - (minuti * 60))
+#
+# dec = "{:.2f}".format(float(final_timer) - minuti * 60 - sec)
+# print("Sono state analizzati " + " pagine in: "
+#       + str(minuti) + " min " + str(sec) + " sec " + str(int(float(dec) * 100)) + " centesimi")
 
-# soup = make_soup('https://unica.it/unica/it/ateneo_s01_ss01_sss07_03_s06.page?contentId=GNC167443')
-#
-#
-# b = soup.find("base")['href']
+# z = make_soup("https://unica.it/unica/it/ateneo_s01_ss01.page").
+# body_link(Albero(make_soup("https://unica.it/unica/it/ateneo_s01_ss01.page").find("meta", {"property", "og:url"})))
+# <a href="https://www.unica.it/unica/it/covid19_didattica_teams_faq.page" title="Vai alla pagina:F.A.Q. Microsoft Teams">
 
 ##################################################################
 
@@ -302,6 +327,9 @@ while cho != '0':
                 # elmino i vecchi backup
                 delete_backups()
 
+                # inizio il timer
+                start = time.time()
+
                 # crea l'albero e aggiorna la lista dei percorsi
                 soup = make_soup('https://www.unica.it/unica/it/homepage.page')
 
@@ -319,7 +347,23 @@ while cho != '0':
                 # salvo l'albero come file
                 # Lo 0 serve per indicare l'inizio dei tab da inserire prima della stringa da stampare
                 update_tree(tree, 0)  # ripopola il file
-                print("Sono state analizzati " + str(len(list_href)) + " pagine")
+
+                # fermo il timer
+                end = time.time()
+
+                final_timer = float("{:.2f}".format(end - start))
+                minuti = 0
+                sec = 0
+                dec = 0
+
+                if float(final_timer) > 60:
+                    minuti = int(int(final_timer) / 60)
+                if float(final_timer) > 60:
+                    sec = (int(final_timer) - (minuti * 60))
+
+                dec = "{:.2f}".format(float(final_timer) - minuti * 60 - sec)
+                print("Sono state analizzati " + str(len(list_href)) + " pagine in: "
+                      + str(minuti) + " min " + str(sec) + " sec " + str(int(float(dec) * 100)) + " centesimi")
 
             else:
                 if cho == '3':  # ricerca errori
@@ -341,6 +385,6 @@ while cho != '0':
 
 
 # vecchio layout pagine unica
-#
+# pagine che non rispondono
 
 # TODO creare un menu iniziale con la possibilità di caricare un log di dati precedentemente creato
