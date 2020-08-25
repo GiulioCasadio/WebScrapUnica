@@ -15,7 +15,9 @@ class Albero:  # classe albero che conterrà i vari nodi del mio albero
 # Funzioni
 def make_soup(url):  # restituisce la pagina html da analizzare
     page = requests.get(url)  # invio la pagina da controllare
-    return BeautifulSoup(page.content, 'html.parser')  # restituisce l'html della pagina selezionata
+    # return BeautifulSoup(page.content, 'html.parser')  # restituisce l'html della pagina selezionata
+    # restituisce l'html della pagina selezionata
+    return BeautifulSoup(page.content, "html.parser", from_encoding="iso-8859-1")
 
 
 # primi nodi dell'albero
@@ -48,7 +50,7 @@ def primi_nodi(padre):
 # stampa del percorso
 def update_tree(t, tab):  # t = tree, s = stringa
     if t is not None:
-        file_tree = open('last_updated_tree.txt', 'a')
+        file_tree = open('last_updated_tree.txt', 'a', encoding='utf-8')
         s = "\t" * tab + normaliz(t.Contenuto.get_text() + "\n")
         file_tree.write(s)
         file_tree.close()
@@ -147,10 +149,11 @@ def body_link(alb):
                         try:
                             body_link(link_check_href)
 
-                        except requests.exceptions.SSLError:
-                            print("An SSLError occurred")
                         except requests.exceptions.ConnectionError:
-                            print("A ConnectionError occurred")
+                            file_connect = open("list_connection_errors.txt", "a", encoding='utf-8')
+                            s_href = alb.Contenuto['href'] + " -> " + link_check_href.Contenuto.get_text() + "\n"
+                            file_connect.write(s_href)
+                            file_connect.close()
 
                     # aggiungo il nodo figlio all'albero
                     alb.figlio.append(link_check_href)
@@ -170,10 +173,11 @@ def body_link(alb):
                         try:
                             body_link(link_check_href)
 
-                        except requests.exceptions.SSLError:
-                            print("An SSLError occurred")
                         except requests.exceptions.ConnectionError:
-                            print("A ConnectionError occurred")
+                            file_connect = open("list_connection_errors.txt", "a", encoding='utf-8')
+                            s_href = alb.Contenuto['href'] + " -> " + link_check_href.Contenuto.get_text() + "\n"
+                            file_connect.write(s_href)
+                            file_connect.close()
 
                     # aggiungo il nodo figlio all'albero
                     alb.figlio.append(link_check_href)
@@ -200,7 +204,6 @@ def trova(base, ricerca):
         return False
 
 
-
 def check_page(soup, alb):
     # verifico se la pagina è vuota
     check_empty_page(soup, alb)
@@ -214,7 +217,7 @@ def check_empty_page(soup_check, alb):
     cla = None
     aux = True  # presuppongo che la pagina sia corretta
 
-    with open("list_empty_page.txt", "r") as fp:
+    with open("list_empty_page.txt", "r", encoding='utf-8') as fp:
         lines = fp.readlines()
 
     # controlli per ricerca link o div
@@ -233,7 +236,7 @@ def check_empty_page(soup_check, alb):
             if lines[i] == alb.Contenuto['href'] + "\n":
                 re = True
         if not re:
-            file_empty = open('list_empty_page.txt', 'a')
+            file_empty = open('list_empty_page.txt', 'a', encoding='utf-8')
             s_href = alb.Contenuto['href'] + "\n"
             file_empty.write(s_href)
             file_empty.close()
@@ -256,7 +259,7 @@ def check_recurs_page(soup_check, alb):
                 aux = False
 
     if not aux:  # se è false insomma
-        file_rec = open('list_recurs_page.txt', 'a')
+        file_rec = open('list_recurs_page.txt', 'a', encoding='utf-8')
         s_href = alb.Contenuto['href'] + "\n"
         file_rec.write(s_href)
         file_rec.close()
@@ -276,6 +279,10 @@ def delete_backups():
     file_recurs = open("list_recurs_page.txt", "w")
     file_recurs.truncate()  # elimina il contenuto
     file_recurs.close()
+
+    file_connect = open("list_connection_errors.txt", "w")
+    file_connect.truncate()  # elimina il contenuto
+    file_connect.close()
 
 
 ##################################################################
@@ -318,7 +325,7 @@ while cho != '0':
     else:
         if cho == '1':  # STAMPA
             # stampa tutto l'albero.
-            file1 = open("last_updated_tree.txt", "r")
+            file1 = open("last_updated_tree.txt", "r", encoding='utf-8')
             print(file1.read())
             file1.close()
 
@@ -370,16 +377,23 @@ while cho != '0':
                     # pagine vuote
                     print("\nLista delle pagine non aventi contenuto:")
                     # stampa tutti link.
-                    file2 = open("list_empty_page.txt", "r")
+                    file2 = open("list_empty_page.txt", "r", encoding='utf-8')
                     print(file2.read())
                     file2.close()
 
                     # pagine ricorsive
                     print("\nLista delle pagine con link che richiamano alla stessa pagina:")
                     # stampa tutti link.
-                    file3 = open("list_recurs_page.txt", "r")
+                    file3 = open("list_recurs_page.txt", "r", encoding='utf-8')
                     print(file3.read())
                     file3.close()
+
+                    # errori di connessioni
+                    print("\nLista delle pagine che hanno creato errori di connessione:")
+                    # stampa tutti link.
+                    file4 = open("list_connection_errors.txt", "r", encoding='utf-8')
+                    print(file4.read())
+                    file4.close()
                 else:
                     print("Nessuna opzione per questa scelta")
 
