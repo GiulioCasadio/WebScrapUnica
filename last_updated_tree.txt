@@ -524,6 +524,15 @@ Homepage
 			 Foresteria - Guest house
 			 Summer and Winter Schools
 			 EDUC
+				 Il progetto
+				 News
+				 OpportunitÃ 
+					Link notizia preselezione idee progettuali EDUC
+						Clicca per il sito web EDUC
+				 Documenti
+					European Universities EACEA
+					Sito Ufficiale EDUC
+				 Contatti
 		Storia dell'Ateneo
 			 Atti di fondazione
 			 Documenti di rifondazione
@@ -779,6 +788,7 @@ Homepage
 						Fac-simile scheda
 					 PON 2019
 						Assegnazione borse aggiuntive PON RI - XXXV ciclo - 1° anno (D.R. rep. n. 144/2020 del 29.01.2020)
+					 PON 2020
 				 Borse di studio POR-FSE
 					Sito web SardegnaProgrammazione
 					 XXXV ciclo
@@ -890,6 +900,7 @@ Homepage
 				link di accesso alla riunione per lo svolgimento dell’Esame di Stato
 				Calendario I sessione 2020
 				 sessione 2020 - Indicazioni per i candidati
+				Elenco abilitati I sessione 2020
 				link di accesso alla riunione per lo svolgimento dell’Esame di Stato
 				link alla riunione per l'esame di Stato
 				Calendario I sessione 2020
@@ -925,6 +936,7 @@ Homepage
 				Elenco abilitati I sessione 2020
 				Rettifica al Decreto di nomina commissioni
 				Esame di Stato 2020
+				Calendario aggiornato
 				link di accesso alla riunione per l'esame di Stato
 				Indicazioni ai candidati
 				Calendario prove
@@ -956,6 +968,7 @@ Homepage
 			 Contributi d'ateneo
 				 Progetti di rilevante interesse dipartimentale (Prid)
 				 Progetti biennali finanziati dalla Fondazione di Sardegna
+					Volume "Università di Cagliari e Fondazione di Sardegna: un percorso comune nella ricerca"
 				 PremialitÃ  didattica
 				 Fondo integrativo per la ricerca (Fir)
 			 Borse, Assegni di ricerca
@@ -994,6 +1007,7 @@ Homepage
 				 Bandi finanziati Ras
 				 Incentivi 2008
 					Decreto ministeriale 501 del 20 marzo 2003
+			 Pubblicare in Open Access - Contratti trasformativi
 		Public engagement
 		Sardegna laboratori
 		Utilizzo spazi universitari

@@ -398,7 +398,5 @@ while cho != '0':
                     print("Nessuna opzione per questa scelta")
 
 
-# vecchio layout pagine unica
-# pagine che non rispondono
-
+# TODO vecchio layout pagine unica
 # TODO creare un menu iniziale con la possibilità di caricare un log di dati precedentemente creato
