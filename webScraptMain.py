@@ -1,5 +1,7 @@
 import requests
 import time
+import os
+from graphviz import Graph
 from bs4 import BeautifulSoup
 
 # Strutture
@@ -22,12 +24,23 @@ def make_soup(url):  # restituisce la pagina html da analizzare
 
 # primi nodi dell'albero
 def primi_nodi(padre):
+    # inserisco nell'albero da stampare il primo nodo
+    sp = normaliz(padre.Contenuto.get_text())
+    hp = str(hash(normaliz(padre.Contenuto['href'])))
+    dot.node(hp, sp, href=padre.Contenuto['href'], shape="box")
     # inserisce i primi figli dell'albero del portale
     aux = 0  # contatore li
 
     for i in range(1, len(children)):
         child = Albero(children[i].find('a'))  # figlio da aggiungere
         list_href.append(child.Contenuto['href'])
+
+        # aggiorno l'albero
+        sf = normaliz(child.Contenuto.get_text())
+        hf = str(hash(normaliz(child.Contenuto['href'])))
+        dot.node(hf, sf, href=child.Contenuto['href'], shape="box")
+        dot.edge(hp, hf, splines="ortho")  # link tr nodo padre e nuovo nodo
+
         # controllo se questo figlio ha a sua volta altri figli
         ul_side_f = soup.find('ul', {'class': 'navmenu'})  # seleziona la barra menu laterale
         li_side_f = ul_side_f.findChildren('li')  # seleziona tutti i figli della navbar
@@ -40,10 +53,18 @@ def primi_nodi(padre):
             for j in range(len(li_side_s)):
                 nep = Albero(li_side_s[j])  # nipote
                 list_href.append(nep.Contenuto['href'])
-                child.figlio.append(nep)  # inserisco il npote della radice come figlio del figlio diretto
+                child.figlio.append(nep)  # inserisco il nipote della radice come figlio del figlio diretto
+
+                # aggiorno l'albero
+                sn = normaliz(nep.Contenuto.get_text())
+                hn = str(hash(normaliz(nep.Contenuto['href'])))
+                dot.node(hn, sn, href=nep.Contenuto['href'], shape="box")
+                dot.edge(hf, hn, splines="ortho")  # link tr nodo padre e nuovo nodo
 
         tree.figlio.append(child)  # inserisco questo figlio
 
+    # dot.render("prova", format='svg')
+    #     print(os.system('prova.svg'))
     return padre
 
 
@@ -88,7 +109,9 @@ def insert_list_group(padre):
     aux = 0  # contatore li
     a_ref = padre.Contenuto['href']
     new_soup = make_soup(a_ref)
-    vert_internal_menu = new_soup.find(class_='list-group')  # menu laterale
+    vert_internal_menu = new_soup.find(class_='list-group')  # menu' laterale
+
+    hp = str(hash(normaliz(padre.Contenuto['href'])))
 
     if vert_internal_menu is not None:  # verifico se è presente il menu'
         child_li = vert_internal_menu.findAll(class_='list-group-item')  # tutti gli li di questa sidebar
@@ -105,6 +128,13 @@ def insert_list_group(padre):
                     for j in range(len(direct_child.find('ul', recursive=False).findChildren('li', recursive=False))):
                         albe_da_inserire = Albero(direct_child_child[j+aux].find('a'))
                         list_href.append(albe_da_inserire.Contenuto['href'])
+
+                        # aggiorno l'albero
+                        sf = normaliz(albe_da_inserire.Contenuto.get_text())
+                        hf = str(hash(normaliz(albe_da_inserire.Contenuto['href'])))
+                        dot.node(hf, sf, href=albe_da_inserire.Contenuto['href'], shape="box")
+                        dot.edge(hp, hf, splines="ortho")  # link tr nodo padre e nuovo nodo
+
                         # caso in cui non ci siano figli da inserire (quindi cerco nel body)
                         if direct_child_child[j+aux].find('ul') is None:
                             body_link(albe_da_inserire)
@@ -117,16 +147,24 @@ def insert_list_group(padre):
                             for h in range(len(direct_child_child[j+aux].findChildren('li'))):  # -> rettore..
                                 albe_da_inserire_deep = Albero(direct_child_child[j+aux+1].find('a'))
                                 list_href.append(albe_da_inserire_deep.Contenuto['href'])
+
+                                # aggiorno l'albero
+                                sn = normaliz(albe_da_inserire_deep.Contenuto.get_text())
+                                hn = str(hash(normaliz(albe_da_inserire_deep.Contenuto['href'])))
+                                dot.node(hn, sn, href=albe_da_inserire_deep.Contenuto['href'], shape="box")
+                                dot.edge(hf, hn, splines="ortho")  # link tr nodo padre e nuovo nodo
+
                                 body_link(albe_da_inserire_deep)  # controllo body
                                 padre.figlio[j].figlio.append(albe_da_inserire_deep)
                                 aux += 1
-
     return padre
 
 
 # test link interni
 def body_link(alb):
     soup = make_soup(alb.Contenuto['href'])
+
+    hp = str(hash(normaliz(alb.Contenuto['href'])))
 
     # controlli errori della pagina
     check_page(soup, alb)
@@ -144,6 +182,12 @@ def body_link(alb):
                 if aux:
                     list_href.append(link_check_href.Contenuto['href'])
 
+                    # aggiorno l'albero
+                    sf = normaliz(link_check_href.Contenuto.get_text())
+                    hf = str(hash(normaliz(link_check_href.Contenuto['href'])))
+                    dot.node(hf, sf, href=link_check_href.Contenuto['href'], shape="box")
+                    dot.edge(hp, hf, splines="ortho")  # link tr nodo padre e nuovo nodo
+
                     # controllo se sono presenti altri link dentro questo link (solo se appartiene a Unica)
                     if trova(link_check_href.Contenuto['href'], "unica.it"):
                         try:
@@ -154,6 +198,9 @@ def body_link(alb):
                             s_href = alb.Contenuto['href'] + " -> " + link_check_href.Contenuto.get_text() + "\n"
                             file_connect.write(s_href)
                             file_connect.close()
+
+                            # segno nell'albero l'errore
+                            dot.node(str(hash(normaliz(alb.Contenuto['href']))), style="filled", fillcolor="firebrick1")
 
                     # aggiungo il nodo figlio all'albero
                     alb.figlio.append(link_check_href)
@@ -168,6 +215,12 @@ def body_link(alb):
                 if aux:
                     list_href.append(link_check_href.Contenuto['href'])
 
+                    # aggiorno l'albero
+                    sf = normaliz(link_check_href.Contenuto.get_text())
+                    hf = str(hash(normaliz(link_check_href.Contenuto['href'])))
+                    dot.node(hf, sf, href=link_check_href.Contenuto['href'], shape="box")
+                    dot.edge(hp, hf, splines="ortho")  # link tr nodo padre e nuovo nodo
+
                     # controllo se sono presenti altri link dentro questo link (solo se appartiene a Unica)
                     if trova(link_check_href.Contenuto['href'], "unica.it"):
                         try:
@@ -178,6 +231,9 @@ def body_link(alb):
                             s_href = alb.Contenuto['href'] + " -> " + link_check_href.Contenuto.get_text() + "\n"
                             file_connect.write(s_href)
                             file_connect.close()
+
+                            # segno nell'albero l'errore
+                            dot.node(str(hash(normaliz(alb.Contenuto['href']))), style="filled", fillcolor="firebrick1")
 
                     # aggiungo il nodo figlio all'albero
                     alb.figlio.append(link_check_href)
@@ -241,6 +297,9 @@ def check_empty_page(soup_check, alb):
             file_empty.write(s_href)
             file_empty.close()
 
+            # segno nell'albero l'errore
+            dot.node(str(hash(normaliz(alb.Contenuto['href']))), style="filled", fillcolor="firebrick1")
+
 
 # non funziona perfettamente. Alvune pagine mantengono stesso contenuto ma cambiano link
 def check_recurs_page(soup_check, alb):
@@ -263,6 +322,9 @@ def check_recurs_page(soup_check, alb):
         s_href = alb.Contenuto['href'] + "\n"
         file_rec.write(s_href)
         file_rec.close()
+
+        # segno nell'albero l'errore
+        dot.node(str(hash(normaliz(alb.Contenuto['href']))), style="filled", fillcolor="firebrick1")
 
 
 def delete_backups():
@@ -289,24 +351,6 @@ def delete_backups():
 #                       AREA DEI TEST                            #
 ##################################################################
 
-# final_timer = float("966.04")
-# minuti = 0
-# sec = 0
-# dec = 0
-#
-# if float(final_timer) > 60:
-#     minuti = int(int(final_timer) / 60)
-# if float(final_timer) > 60:
-#     sec = (int(final_timer) - (minuti * 60))
-#
-# dec = "{:.2f}".format(float(final_timer) - minuti * 60 - sec)
-# print("Sono state analizzati " + " pagine in: "
-#       + str(minuti) + " min " + str(sec) + " sec " + str(int(float(dec) * 100)) + " centesimi")
-
-# z = make_soup("https://unica.it/unica/it/ateneo_s01_ss01.page").
-# body_link(Albero(make_soup("https://unica.it/unica/it/ateneo_s01_ss01.page").find("meta", {"property", "og:url"})))
-# <a href="https://www.unica.it/unica/it/covid19_didattica_teams_faq.page" title="Vai alla pagina:F.A.Q. Microsoft Teams">
-
 ##################################################################
 
 # lista di tutti gli href. Usata per capire quando un link richiama una pagina già inserita nell'albero
@@ -319,9 +363,9 @@ while cho != '0':
     cho = input('0 -> EXIT\n'
                 '1 -> STAMP\n'
                 '2 -> UPDATE\n'
-                '3 -> LIST ALL ERRORS')
+                '3 -> LIST ALL ERRORS\n')
     if cho == '0':
-        print('Chiusura')
+        print('\n--> Chiusura <--')
     else:
         if cho == '1':  # STAMPA
             # stampa tutto l'albero.
@@ -329,8 +373,16 @@ while cho != '0':
             print(file1.read())
             file1.close()
 
+            # apre il file svg
+            print(os.system('prova.svg'))
+
         else:
             if cho == '2':  # UPDATE
+                # creazione albero SVG
+                dot = Graph(
+                    comment='file per la visualizzazione dell\'albero')  # da esportare in svg così da poter creare una web page
+                dot.attr(nodesep="0.5", ranksep="1")
+
                 # elmino i vecchi backup
                 delete_backups()
 
@@ -369,8 +421,11 @@ while cho != '0':
                     sec = (int(final_timer) - (minuti * 60))
 
                 dec = "{:.2f}".format(float(final_timer) - minuti * 60 - sec)
-                print("Sono state analizzati " + str(len(list_href)) + " pagine in: "
-                      + str(minuti) + " min " + str(sec) + " sec " + str(int(float(dec) * 100)) + " centesimi")
+                print("Sono state analizzate " + str(len(list_href)) + " pagine in: "
+                      + str(minuti) + " min e " + str(sec) + " sec ")  # + str(int(float(dec) * 100)) + " centesimi")
+
+                # salva il file SVG
+                dot.render("prova", format='svg')
 
             else:
                 if cho == '3':  # ricerca errori
@@ -399,4 +454,5 @@ while cho != '0':
 
 
 # TODO vecchio layout pagine unica
-# TODO creare un menu iniziale con la possibilità di caricare un log di dati precedentemente creato
+# TODO cambiare colore nodo a seconda dell' errore
+# TODO trovare nuovi errori

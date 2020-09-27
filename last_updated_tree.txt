@@ -538,6 +538,7 @@ Homepage
 			 Documenti di rifondazione
 			 Stemma dell'universitÃ  e identitÃ  visiva
 		LâAteneo in cifre
+			 ateneo in cifre - studenti
 		Docenti e ricercatori
 			 Servizi online per i docenti
 				Sito per servizio online docenti
@@ -889,6 +890,7 @@ Homepage
 			 Avvisi e scadenze Esami di Stato
 			 Normativa di riferimento
 			 Elenco abilitazioni
+				II sessione - modalità di svolgimento della prova
 				link alla riunione per l'esame di Stato
 				Calendario prove
 				Integrazione Decreto di nomina delle commissioni
