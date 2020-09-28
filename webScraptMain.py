@@ -25,6 +25,27 @@ def make_soup(url):  # restituisce la pagina html da analizzare
     return BeautifulSoup(page.content, "html.parser", from_encoding="iso-8859-1")
 
 
+def update_window():
+    new_window = Toplevel(window)
+    new_window.geometry("450x200")
+    new_window.title("Conferma")
+    new_window.resizable(0, 0)
+    new_window.configure(background="white")
+    new_window.grid_columnconfigure(0, weight=1)
+
+    new_label = Label(new_window,
+          text="L'aggiornamento richiederà una decina di minuti, \nsei sicuro di voler procedere?", bg="white")
+
+    new_label.pack()
+    new_label.grid(row=0, columnspan=2, sticky="N", padx=20, pady=20)
+
+    button_true = tk.Button(new_window, text="Aggiorna", command=lambda: [update(), new_window.destroy()])  # update dei miei file
+    button_true.grid(row=8, column=0, sticky="NW", pady=20, padx=30)
+
+    button_false = tk.Button(new_window, text="Annulla", command=new_window.destroy)  # update dei miei file
+    button_false.grid(row=8, column=1, sticky="NE", pady=20, padx=30)
+
+
 # aggiorno la scansione
 def update():
     # primi nodi dell'albero
@@ -456,7 +477,6 @@ def ricerca_error():  # ricerca errori
     textwidget.insert(tk.END, stringa_errori)
     textwidget.grid(row=10, column=0, sticky="WE", pady=10, padx=10)
 
-
 # lista di tutti gli href. Usata per capire quando un link richiama una pagina già inserita nell'albero
 list_href = ["https://www.unica.it/unica/it/ateneo_s04_ss03_sss01.page"]  # primo link della lista
 
@@ -470,15 +490,13 @@ window.grid_columnconfigure(0, weight=1)
 
 logo = tk.PhotoImage(file="res/unica_logo_black.png")
 
-logo = logo.subsample(8)
+logo = logo.subsample(5)
 
 label = Label(window, image=logo)
 label.pack()
-
-
 label.grid(row=0, column=0, sticky="N", padx=20, pady=10)
 
-update_button = tk.Button(text="Aggiorna albero dei percorsi e relativi errori", command=lambda: update())  # update dei miei file
+update_button = tk.Button(text="Aggiorna albero dei percorsi e relativi errori", command=lambda: update_window())  # update dei miei file
 update_button.grid(row=2, column=0, sticky="WE", pady=10, padx=10)
 
 tre_button = tk.Button(text="Apri il file svg dell'ultimo albero aggiornato", command=lambda: print(os.system('prova.svg'))) # apre il file svg
@@ -487,14 +505,12 @@ tre_button.grid(row=4, column=0, sticky="WE", pady=10, padx=10)
 stamp_button = tk.Button(text="Stampa percorsi (txt)", command=lambda: stampa_alb())
 stamp_button.grid(row=6, column=0, sticky="WE", pady=10, padx=10)
 
-error_button = tk.Button(text="Stampa errori (txt)", command=lambda: ricerca_error()) # ricerca e stampa errori
-error_button.grid(row=8, column=0, sticky="WE", pady=10, padx=10)
+count_er = 0
 
+error_button = tk.Button(text="Stampa errori (txt)", command=lambda: ricerca_error())  # ricerca e stampa errori
+error_button.grid(row=8, column=0, sticky="WE", pady=10, padx=10)
 
 if __name__ == "__main__":
     window.mainloop()
 
-
-# TODO vecchio layout pagine unica
-# TODO cambiare colore nodo a seconda dell' errore
 # TODO trovare nuovi errori
