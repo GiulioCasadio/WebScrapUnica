@@ -267,6 +267,17 @@ def check_page(soup, alb):
     # verifico se la pagina ha link ricorsivi
     check_recurs_page(soup, alb)
 
+    # veriico se sto visualizzando il vecchio template
+    check_old_template(soup, alb)
+
+
+# veriico se sto visualizzando il vecchio template
+def check_old_template(soup_check, alb):
+    check = soup_check.find('body', {'class': 'page-template-default'})
+
+    if check is not None:
+        dot.node(str(hash(normaliz(alb.Contenuto['href']))), style="filled", fillcolor="beige")
+
 
 # verifica se la pagina è priva di contenuto
 def check_empty_page(soup_check, alb):
@@ -298,7 +309,7 @@ def check_empty_page(soup_check, alb):
             file_empty.close()
 
             # segno nell'albero l'errore
-            dot.node(str(hash(normaliz(alb.Contenuto['href']))), style="filled", fillcolor="firebrick1")
+            dot.node(str(hash(normaliz(alb.Contenuto['href']))), style="filled", fillcolor="darkorange")
 
 
 # non funziona perfettamente. Alvune pagine mantengono stesso contenuto ma cambiano link
@@ -324,7 +335,7 @@ def check_recurs_page(soup_check, alb):
         file_rec.close()
 
         # segno nell'albero l'errore
-        dot.node(str(hash(normaliz(alb.Contenuto['href']))), style="filled", fillcolor="firebrick1")
+        dot.node(str(hash(normaliz(alb.Contenuto['href']))), style="filled", fillcolor="gold1")
 
 
 def delete_backups():
@@ -381,7 +392,7 @@ while cho != '0':
                 # creazione albero SVG
                 dot = Graph(
                     comment='file per la visualizzazione dell\'albero')  # da esportare in svg così da poter creare una web page
-                dot.attr(nodesep="0.5", ranksep="1")
+                dot.attr(nodesep="0.8", ranksep="1.2")
 
                 # elmino i vecchi backup
                 delete_backups()
