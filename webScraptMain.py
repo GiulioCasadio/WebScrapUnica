@@ -465,6 +465,7 @@ list_href = ["https://www.unica.it/unica/it/ateneo_s04_ss03_sss01.page"]  # prim
 window = tk.Tk()
 window.geometry("1300x1000")
 window.title("WebScrpatUnica")
+window.configure(background="white")
 window.grid_columnconfigure(0, weight=1)
 
 logo = tk.PhotoImage(file="res/unica_logo_black.png")
