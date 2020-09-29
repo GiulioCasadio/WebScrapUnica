@@ -5,7 +5,7 @@ from graphviz import Graph
 from bs4 import BeautifulSoup
 import tkinter as tk
 from tkinter import *
-
+from tkinter import scrolledtext
 
 # Strutture
 class Albero:  # classe albero che conterrà i vari nodi del mio albero
@@ -444,7 +444,10 @@ def stampa_alb():
     # stampa tutto l'albero.
     file1 = open("last_updated_tree.txt", "r", encoding='utf-8')
 
-    textwidget = tk.Text()
+    textwidget = tk.scrolledtext.ScrolledText(window,
+                                              wrap=tk.WORD,
+                                              width=40,
+                                              height=28)
     textwidget.insert(tk.END, file1.read())
     textwidget.grid(row=10, column=0, sticky="WE", pady=10, padx=10)
 
@@ -473,9 +476,13 @@ def ricerca_error():  # ricerca errori
     stringa_errori = stringa_errori + "\nLista delle pagine che hanno il vecchio template:" + file5.read()
     file5.close()
 
-    textwidget = tk.Text()
+    textwidget = tk.scrolledtext.ScrolledText(window,
+                                              wrap=tk.WORD,
+                                              width=40,
+                                              height=28)
     textwidget.insert(tk.END, stringa_errori)
     textwidget.grid(row=10, column=0, sticky="WE", pady=10, padx=10)
+
 
 # lista di tutti gli href. Usata per capire quando un link richiama una pagina già inserita nell'albero
 list_href = ["https://www.unica.it/unica/it/ateneo_s04_ss03_sss01.page"]  # primo link della lista
@@ -486,13 +493,14 @@ window = tk.Tk()
 window.geometry("1300x1000")
 window.title("WebScrpatUnica")
 window.configure(background="white")
+window.resizable(0, 0)
 window.grid_columnconfigure(0, weight=1)
 
 logo = tk.PhotoImage(file="res/unica_logo_black.png")
 
 logo = logo.subsample(5)
 
-label = Label(window, image=logo)
+label = Label(window, image=logo, bg="white")
 label.pack()
 label.grid(row=0, column=0, sticky="N", padx=20, pady=10)
 
